@@ -1,10 +1,28 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:nfccard/widgets/icon_with_text.dart';
-import 'package:nfccard/widgets/name_and_title.dart';
+import 'package:touche/widgets/icon_with_text.dart';
+import 'package:touche/widgets/name_and_title.dart';
 
 class BusinessCard extends StatelessWidget {
+  final String givenName;
+  final String familyName;
+  final String title;
+  final String phone;
+  final String email;
+  final String avatar;
+  final String logo;
+
+  const BusinessCard(
+      {super.key,
+      required this.title,
+      required this.email,
+      required this.avatar,
+      required this.phone,
+      required this.logo,
+      required this.givenName,
+      required this.familyName});
+
   @override
   Widget build(BuildContext context) {
     return Card(
@@ -17,7 +35,7 @@ class BusinessCard extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10),
           image: DecorationImage(
-              image: new AssetImage("assets/images/bg_green.png"),
+              image: new AssetImage("assets/images/bg_grey.png"),
               fit: BoxFit.cover),
         ),
         padding: const EdgeInsets.all(20.0),
@@ -31,39 +49,41 @@ class BusinessCard extends StatelessWidget {
                     flex: 2,
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: Image.asset("assets/images/logo.png"),
+                      child: Image.asset(logo),
                     )),
-                const Expanded(
+                Expanded(
                     flex: 2,
                     child: NameAndTitle(
-                      nameLabel: "Ruiqun Li",
-                      titleLabel: "Director, Project Management",
+                      nameColor: Colors.black87,
+                      titleColor: Colors.black87,
+                      nameLabel: givenName + ' ' + familyName,
+                      titleLabel: title,
                     )),
-                const Expanded(
+                Expanded(
                     flex: 1,
                     child: IconWithText(
                       icon: CupertinoIcons.mail_solid,
-                      label: 'ruiqun.li@plapros.com',
+                      label: email,
                       color: Color(0xff3c7112),
                     )),
-                const Expanded(
+                Expanded(
                     flex: 1,
                     child: IconWithText(
                       icon: CupertinoIcons.phone_solid,
-                      label: '+1 514-699-6181',
+                      label: phone,
                       color: Color(0xff3c7112),
                     )),
               ],
             ),
           ),
-          const Expanded(
+          Expanded(
             flex: 3,
             child: CircleAvatar(
               radius: 55,
               backgroundColor: Colors.white,
               child: CircleAvatar(
                 radius: 50,
-                backgroundImage: AssetImage('assets/images/avatar.png'),
+                backgroundImage: AssetImage(avatar),
               ),
             ),
           )

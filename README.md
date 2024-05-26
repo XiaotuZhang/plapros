@@ -1,6 +1,6 @@
-# nfccard
+# plapros demo
 
-A new Flutter project for NFCCard
+A new Flutter project for plapros demo
 
 ## Getting Started
 

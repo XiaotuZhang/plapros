@@ -1,11 +1,11 @@
 {
-    "name": "nfccard",
-    "short_name": "nfccard",
+    "name": "touche.",
+    "short_name": "touche.",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A new Flutter project for NFCCard",
+    "description": "A new touche. project for plapros-deba",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

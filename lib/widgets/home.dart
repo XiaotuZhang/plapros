@@ -1,10 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
-import 'package:nfccard/widgets/business_card.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'dart:convert';
-import 'dart:typed_data';
 import 'dart:html';
 import 'package:flutter/services.dart' show rootBundle;
 
@@ -19,7 +17,7 @@ class Home extends StatelessWidget {
         appBar: AppBar(
           title: new Center(
               child: new Text("Hello!",
-                  style: TextStyle(fontFamily: 'Jersey15', fontSize: 30),
+                  style: TextStyle(fontFamily: 'PoetsenOne', fontSize: 30),
                   textAlign: TextAlign.center)),
         ),
         body: Container(
@@ -30,7 +28,7 @@ class Home extends StatelessWidget {
                 Container(
                     width: 350 * mult,
                     height: 200 * mult,
-                    child: SizedBox(width: 350 * mult, child: BusinessCard())),
+                    child: SizedBox(width: 350 * mult, child: Container())),
                 Container(
                   width: 350 * mult,
                   padding: const EdgeInsets.all(20),
@@ -92,7 +90,7 @@ class Home extends StatelessWidget {
                           launch(url);
                         },
                         child: Image.asset(
-                          'assets/images/logo.png',
+                          'assets/images/plapros_logo.png',
                           // Replace with your logo asset path
                           width: 128, // Adjust width as needed
                           height: 64, // Adjust height as needed

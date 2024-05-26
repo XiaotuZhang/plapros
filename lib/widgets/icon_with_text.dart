@@ -31,7 +31,7 @@ class IconWithText extends StatelessWidget {
               label,
               style: TextStyle(
                 fontSize: 12,
-                color: Colors.white,
+                color: Colors.black87,
                 fontWeight: FontWeight.w400,
               ),
             ),
