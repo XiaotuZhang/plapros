@@ -54,15 +54,15 @@ class MyApp extends StatelessWidget {
               companyUrl: 'https://mont-river.ca/',
               about:
                   'MontRiver international Inc. is a company specializing in a series of renovation materials such as kitchen cabinet, bathroom cabinet, wood flooring, vinyl flooring, plywood, outdoor wood-plastic flooring, wood-plastic fences and other renovation materials. Our company owns three brands: MontRiver, MooseWood, Magog for three different product series. MONTRIVER is based in Montreal, serving the North Americain market, quality oriented, loyal to customers.',
-              phone: '+1 438-239-8808',
-              email: 'info@mont-river.ca',
+              phone: '+1 514-654-5694',
+              email: 'operations@montrivermtl.ca',
               address: '2300 32e Ave., Lachine, QC, H8T 3H4, Canada',
               company: 'MontRiver',
             ),
         '/jeffliangzhao': (context) => UserPage(
               givenName: 'Jeff Liang',
               familyName: 'Zhao',
-              title: 'Estate Broker',
+              title: 'Real estate agent for 19 years ',
               linkedin: 'https://www.linkedin.com/in/jeff-liang-zhao-68761637/',
               avatar: 'assets/images/liang_zhao.jpeg',
               companyLogo: 'assets/images/charisma_logo.png',
@@ -70,7 +70,7 @@ class MyApp extends StatelessWidget {
               about:
                   'Experienced Real Estate Broker with a demonstrated history of working in the consumer services industry. Skilled in Lease Administration, Commercial Real Estate, Real Property, Working with Tenants, and Real Estate. Strong real estate professional from 2004, graduated from Shanxi University. ',
               phone: '+1 514-898-6780',
-              email: 'info@charisma.ca',
+              email: 'jeff@charisma.ca',
               address: '3310 100e Avenue, Laval, QC, H7T 0J7, Canada',
               company: 'LES IMMEUBLES CHARISMA INC.',
             ),

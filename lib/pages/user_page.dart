@@ -186,38 +186,6 @@ class UserPage extends StatelessWidget {
             )));
   }
 
-  Future<Uint8List> loadImageAsset(String asset) async {
-    final byteData = await rootBundle.load(asset);
-    return byteData.buffer.asUint8List();
-  }
-
-  Future<Contact> createContact() async {
-    Uint8List avatarData = await loadImageAsset('assets/images/ruiqun_li.jpeg');
-    return Contact(
-        givenName: 'Ruiqun',
-        familyName: 'Li',
-        jobTitle: title,
-        company: company,
-        emails: [Item(label: "work", value: email)],
-        phones: [Item(label: "mobile", value: phone)],
-        avatar: avatarData);
-  }
-
-  Future<void> addContact(Contact contact) async {
-    var status = await Permission.contacts.status;
-    if (!status.isGranted) {
-      // Request contacts permission
-      status = await Permission.contacts.request();
-      if (!status.isGranted) {
-        // Permission is not granted, handle accordingly
-        return;
-      }
-    }
-
-    // Save the contact
-    await ContactsService.addContact(contact);
-  }
-
   Future<String> getImageBase64(String avatar) async {
     final ByteData imageData = await rootBundle.load(avatar);
     final Uint8List bytes = imageData.buffer.asUint8List();
