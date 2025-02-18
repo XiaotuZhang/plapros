@@ -14,22 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Véloise-beta',
       initialRoute: '/julien_tougeron',
       routes: {
-        '/ruiqunli': (context) => UserPage(
-              givenName: 'Ruiqun',
-              familyName: 'Li',
-              title: 'Director, Project Management',
-              linkedin: 'https://www.linkedin.com/in/ruiqun-li-21984b91/',
-              avatar: 'assets/images/ruiqun_li.jpeg',
-              companyLogo: 'assets/images/plapros_logo.png',
-              companyUrl: 'https://www.plapros.ca/',
-              about:
-                  'Plapros is a pioneering company at the forefront of resource sustainability technology research, development, and consulting. As an environmental technology specialist, we excel in crafting cost-effective and user-friendly technology solutions that place recyclable, reusable, and renewable materials at the forefront.',
-              phone: '+1 514-699-6181',
-              email: 'ruiqun.li@plapros.com',
-              address: '237 Bd Industriel #140, Châteauguay, QC, J6J 4Z2, Canada',
-              company: 'Plapros Inc.',
-            ),
-        '/ruiqunli2': (context) => UserPage(
+        '/ruiqun_li': (context) => UserPage(
           givenName: 'Ruiqun',
           familyName: 'Li',
           title: 'Director, Project Management',
@@ -58,6 +43,21 @@ class MyApp extends StatelessWidget {
           email: 'julien.tougeron@veloise-group.com',
           address: '237 Bd Industriel, Châteauguay, QC, J6J 4Z2, Canada',
           company: 'Véloise Inc.',
+        ),
+        '/ruiqunli': (context) => UserPage(
+          givenName: 'Ruiqun',
+          familyName: 'Li',
+          title: 'Director, Project Management',
+          linkedin: 'https://www.linkedin.com/in/ruiqun-li-21984b91/',
+          avatar: 'assets/images/ruiqun_li.jpeg',
+          companyLogo: 'assets/images/plapros_logo.png',
+          companyUrl: 'https://www.plapros.ca/',
+          about:
+          'Plapros is a pioneering company at the forefront of resource sustainability technology research, development, and consulting. As an environmental technology specialist, we excel in crafting cost-effective and user-friendly technology solutions that place recyclable, reusable, and renewable materials at the forefront.',
+          phone: '+1 514-699-6181',
+          email: 'ruiqun.li@plapros.com',
+          address: '237 Bd Industriel #140, Châteauguay, QC, J6J 4Z2, Canada',
+          company: 'Plapros Inc.',
         ),
         '/brendali': (context) => UserPage(
               givenName: 'Brenda',
