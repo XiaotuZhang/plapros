@@ -1,6 +1,6 @@
-# plapros demo
+# Veloise demo
 
-A new Flutter project for plapros demo
+A new Flutter project for Veloise demo
 
 ## Getting Started
 
