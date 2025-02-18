@@ -161,7 +161,7 @@ class UserPage extends StatelessWidget {
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Text('integrated with ', style: TextStyle(fontSize: 12),),
-                          Image.asset('assets/images/plapros_logo.png')
+                          Image.asset('assets/images/veloise_logo.png')
                         ],
                       ),
                       Row(
