@@ -11,8 +11,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Plapros-beta',
-      initialRoute: '/ruiqunli',
+      title: 'Véloise-beta',
+      initialRoute: '/julien_tougeron',
       routes: {
         '/ruiqunli': (context) => UserPage(
               givenName: 'Ruiqun',
@@ -29,6 +29,36 @@ class MyApp extends StatelessWidget {
               address: '237 Bd Industriel #140, Châteauguay, QC, J6J 4Z2, Canada',
               company: 'Plapros Inc.',
             ),
+        '/ruiqunli2': (context) => UserPage(
+          givenName: 'Ruiqun',
+          familyName: 'Li',
+          title: 'Director, Project Management',
+          linkedin: 'https://www.linkedin.com/in/ruiqun-li-21984b91/',
+          avatar: 'assets/images/ruiqun_li2.png',
+          companyLogo: 'assets/images/veloise_logo.png',
+          companyUrl: 'https://www.veloise-group.com/',
+          about:
+          'VÉLOISE is above all an innovative fabric. This polylactic acid-based material gives it exceptional characteristics. It has exceptional finesse and comfort offering a unique experience for the skin. This fabric is hypoallergenic, perfect for sensitive skin, it is also breathable, antibacterial and anti-mite, but above all durable. The VÉLOISE brings you comfort without constraints. Fashion, even sustainable, should remain a pleasure!Today, we want to offer major fashion players the opportunity to use our materials for a healthier future while respecting the environment.',
+          phone: '+1 514-699-6181',
+          email: 'ruiqun.li@@veloise-group.com',
+          address: '237 Bd Industriel, Châteauguay, QC, J6J 4Z2, Canada',
+          company: 'Véloise Inc.',
+        ),
+        '/julien_tougeron': (context) => UserPage(
+          givenName: 'Julien',
+          familyName: 'Tougeron',
+          title: 'President',
+          linkedin: 'https://www.linkedin.com/in/julien-tougeron/',
+          avatar: 'assets/images/julien_tougeron.png',
+          companyLogo: 'assets/images/veloise_logo.png',
+          companyUrl: 'https://www.veloise-group.com/',
+          about:
+          'VÉLOISE is above all an innovative fabric. This polylactic acid-based material gives it exceptional characteristics. It has exceptional finesse and comfort offering a unique experience for the skin. This fabric is hypoallergenic, perfect for sensitive skin, it is also breathable, antibacterial and anti-mite, but above all durable. The VÉLOISE brings you comfort without constraints. Fashion, even sustainable, should remain a pleasure!Today, we want to offer major fashion players the opportunity to use our materials for a healthier future while respecting the environment.',
+          phone: '+1 514-298-2337',
+          email: 'julien.tougeron@veloise-group.com',
+          address: '237 Bd Industriel, Châteauguay, QC, J6J 4Z2, Canada',
+          company: 'Véloise Inc.',
+        ),
         '/brendali': (context) => UserPage(
               givenName: 'Brenda',
               familyName: 'Li',

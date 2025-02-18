@@ -23,17 +23,19 @@ class IconWithText extends StatelessWidget {
         children: [
           Padding(
             padding: const EdgeInsets.all(8.0),
-            child: SizedBox(height: 10, child: Icon(icon, size: 20, color: color)),
+            child:
+                SizedBox(height: 10, child: Icon(icon, size: 20, color: color)),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 8),
-            child: Text(
-              label,
-              style: TextStyle(
-                fontSize: 12,
-                color: Colors.black87,
-                fontWeight: FontWeight.w400,
-              ),
+            child: FittedBox(
+              child: Text(label,
+                  style: TextStyle(
+                    fontSize: 12,
+                    color: Colors.black87,
+                    fontWeight: FontWeight.w400,
+                  ),
+                  textScaler: TextScaler.linear(0.8)),
             ),
           ),
         ],
