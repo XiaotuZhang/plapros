@@ -12,12 +12,12 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Véloise-beta',
-      initialRoute: '/julien_tougeron',
+      initialRoute: '/ruiqun_li',
       routes: {
         '/ruiqun_li': (context) => UserPage(
           givenName: 'Ruiqun',
           familyName: 'Li',
-          title: 'Director, Project Management',
+          title: 'CEO',
           linkedin: 'https://www.linkedin.com/in/ruiqun-li-21984b91/',
           avatar: 'assets/images/ruiqun_li2.png',
           companyLogo: 'assets/images/veloise_logo.png',
